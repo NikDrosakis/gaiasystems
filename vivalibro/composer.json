@@ -1,0 +1,11 @@
+{
+  "name": "gpm/vlweb",
+  "description": "Public Vivalibro",
+  "type": "library",
+  "version": "1.0.0",
+  "autoload": {
+    "psr-4": {
+      "Core\\": "core/"
+    }
+  }
+}

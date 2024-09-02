@@ -1,0 +1,48 @@
+{
+  "name": "Real Time API",
+  "version": "2.0.0",
+  "description": "API webSocket nodejs server real time communication ",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikDrosakis/soc.git"
+  },
+  "keywords": [
+    "socket",
+    "realtime"
+  ],
+  "author": "NikDrosakis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikDrosakis/soc/issues"
+  },
+  "homepage": "https://github.com/NikDrosakis/soc#readme",
+  "dependencies": {
+    "@google-cloud/aiplatform": "^3.27.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dhtmlx-gantt": "^8.0.10",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "huggingface": "^1.4.0",
+    "ibm-watson": "^8.0.0",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "mariadb": "^3.3.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.0",
+    "openai": "^4.56.0",
+    "ua-parser-js": "^1.0.38",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}

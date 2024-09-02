@@ -1,0 +1,87 @@
+[4.0K]  .
+├── [5.2K]  ajax.php
+├── [4.0K]  class
+│   ├── [6.0K]  VL.old.php
+│   └── [7.3K]  VL.php
+├── [4.0K]  components
+│   ├── [6.2K]  comment.php
+│   └── [1.4K]  rating.php
+├── [9.2K]  config.old.php
+├── [8.4K]  config.php
+├── [4.0K]  css
+│   ├── [3.1K]  login.css
+│   └── [ 20K]  style.css
+├── [4.6K]  dewey.json
+├── [ 738]  gaia.json
+├── [4.0K]  img
+│   ├── [301K]  header.png
+│   ├── [2.0K]  icon.png
+│   └── [8.6K]  logo.png
+├── [2.3K]  index.php
+├── [4.0K]  js
+│   ├── [ 14K]  index.js
+│   ├── [1.8K]  load.js
+│   └── [4.2K]  register.js
+├── [4.0K]  libs
+├── [4.0K]  main
+│   ├── [3.6K]  book_edit.php
+│   ├── [ 503]  book.php
+│   ├── [1.9K]  book_read.php
+│   ├── [ 329]  books.php
+│   ├── [2.8K]  cat.php
+│   ├── [   0]  ebook.php
+│   ├── [   0]  games.php
+│   ├── [ 581]  libraries.php
+│   ├── [ 635]  login.php
+│   ├── [  16]  post.php
+│   ├── [1.4K]  profile.php
+│   ├── [1.1K]  publisher_edit.php
+│   ├── [ 268]  publisher.php
+│   ├── [1.1K]  register.php
+│   ├── [1.2K]  writer_edit.php
+│   └── [ 266]  writer.php
+├── [4.0K]  main_buffers
+│   ├── [1.4K]  book_archive.php
+│   ├── [1.3K]  books_archive.php
+│   ├── [1.4K]  libraries_archive.php
+│   ├── [1.1K]  publisher_archive.php
+│   └── [1.0K]  writer_archive.php
+├── [  70]  robots.txt
+├── [3.8K]  tax.json
+├── [   0]  tree.txt
+└── [4.0K]  widgets
+    ├── [4.0K]  capture_photo
+    │   └── [4.6K]  public.php
+    ├── [4.0K]  ebook
+    │   └── [6.6K]  public.php
+    ├── [4.0K]  findimage
+    │   └── [4.2K]  public.php
+    ├── [4.0K]  lookupbook
+    │   └── [8.8K]  public.php
+    ├── [4.0K]  menu
+    │   └── [8.3K]  public.php
+    ├── [4.0K]  notification
+    │   └── [3.3K]  public.php
+    ├── [4.0K]  similar
+    │   └── [1.4K]  public.php
+    ├── [4.0K]  slideshow
+    │   ├── [ 11K]  admin.php
+    │   ├── [5.1K]  export.js
+    │   ├── [ 264]  get_slides.php
+    │   ├── [ 396]  get_xhr.php
+    │   ├── [ 386]  index.html
+    │   ├── [3.4K]  post_xhr.php
+    │   ├── [3.3K]  public.php
+    │   ├── [1.0K]  setup.php
+    │   ├── [ 791]  slideshow.js
+    │   └── [ 263]  slideshow.sql
+    ├── [4.0K]  summary
+    │   └── [2.6K]  public.php
+    ├── [4.0K]  test
+    │   └── [1.7K]  public.php
+    ├── [4.0K]  top
+    │   └── [  12]  public.php
+    └── [4.0K]  whois
+        └── [   0]  public.php
+
+22 directories, 63 files

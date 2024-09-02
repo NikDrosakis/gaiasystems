@@ -1,0 +1,58 @@
+version: '3.9'
+
+services:
+  vivalibro:
+    build: vivalibro
+    ports:
+      - "80:80"
+    depends_on:
+      - mariadb
+      - api
+    volumes:
+      - ./vivalibro:/var/www/html
+
+  poetabook:
+    build: poetabook
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+
+  admin:
+    build: ./admin
+    ports:
+      - "81:80"
+    depends_on:
+      - mariadb
+      - api
+      - redis
+    volumes:
+      - ./admin:/var/www/html
+      -
+  apiv1:
+    build: ./apiv1
+    ports:
+      - "8080:80"
+    depends_on:
+      - mariadb
+
+  wsi:
+    build: ./wsi
+    ports:
+      - "9000:9000"
+    depends_on:
+      - redis
+
+  mariadb:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: your_root_password
+      MYSQL_DATABASE: vivalibro # Default database
+    volumes:
+      - db_data:/var/lib/mysql
+
+  redis:
+    image: redis:latest
+
+volumes:
+  db_data:
