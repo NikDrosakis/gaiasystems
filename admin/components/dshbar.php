@@ -171,7 +171,7 @@
         <li class="menu-item"><a style="cursor:pointer" onclick="s.init.logout()" id="logout"><span style="margin: 0 8px 0px 0;" class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>Logout</a></li>
         </ul>
 
-        <div id="indicator" class="red"></div>
+
         <div id="c_active_users"></div>
     </nav>
 </header>

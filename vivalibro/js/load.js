@@ -6,7 +6,9 @@ booklist();
 //window.addEventListener('load', updateCardSize);
 
 /***********INSTANTIATE WEBSOCKETS*****************/
-//const socapi = WSClient(G.aconf.config.ws_port, 'indicator');
+const socapi = WSClient(G.aconf.config.ws_port, 'indicator');
+start_widgets();
+socapi.start(soc_success());
 //const socapy = WSClient(3006, 'indicator2');
 /***********LOAD WIDGETS*****************/
 function start_widgets() {
@@ -25,12 +27,11 @@ function start_widgets() {
         }
     }
 }
-start_widgets();
 function soc_success() {
     console.log('WebSocket connection successfully opened');
     document.getElementById('indicator').className = 'green';
 }
-socapi.start(soc_success());
+
 
 
 
