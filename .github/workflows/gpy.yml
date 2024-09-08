@@ -1,0 +1,48 @@
+name: GPY CI/CD
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11' 
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build Docker Image
+        run: docker build -t your-docker-hub-username/your-image-name:latest .
+
+      - name: Push Docker Image (Optional) 
+        if: github.ref == 'refs/heads/main' # Only push on main branch
+        run: docker push your-docker-hub-username/your-image-name:latest
+
+      - name: Deploy to Server (Replace with your deployment steps)
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            # Stop and remove existing container (if any)
+            docker stop your-container-name || true
+            docker rm your-container-name || true
+
+            # Run the new container
+            docker run -d \
+              --name your-container-name \
+              -p 3006:3006 \
+              your-docker-hub-username/your-image-name:latest
