@@ -1,0 +1,14 @@
+# Ignore environment files
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# node_modules 
+node_modules/
+
+# Media files
+media/
